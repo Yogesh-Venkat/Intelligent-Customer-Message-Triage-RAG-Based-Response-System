@@ -24,7 +24,16 @@ import re
 import spacy
 import json
 from typing import List, Any, Dict
+import spacy
+from spacy.util import is_package
+from spacy.cli import download
 
+MODEL = "en_core_web_sm"
+
+if not is_package(MODEL):
+    download(MODEL)
+
+nlp = spacy.load(MODEL, disable=["parser", "ner"])
 
 
 
@@ -218,7 +227,7 @@ def query_chroma(collection, embedder, query: str, top_k: int = TOP_K):
 vectorizer = pickle.load(open("tfidf.pkl", "rb"))
 model = pickle.load(open("best_model.pkl", "rb"))
 
-nlp = spacy.load("en_core_web_sm", disable=["parser", "ner"])
+
 
 URL = r'https?://\S+|www\.\S+'
 EMAIL = r'\S+@\S+'
@@ -612,3 +621,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
