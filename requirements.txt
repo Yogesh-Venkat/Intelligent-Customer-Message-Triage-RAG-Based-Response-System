@@ -1,4 +1,4 @@
-streamlit
+streamlit==1.52.2
 chromadb
 sentence-transformers
 google-generativeai
@@ -9,3 +9,4 @@ protobuf
 typing-extensions
 python-dotenv
 spacy==3.7.4
+
