@@ -2,11 +2,13 @@ streamlit==1.52.2
 chromadb
 sentence-transformers
 google-generativeai
-numpy
+numpy<2.0
+
 pandas
 torch
 protobuf
 typing-extensions
 python-dotenv
 spacy==3.7.4
+
 
