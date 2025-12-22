@@ -8,6 +8,5 @@ torch
 protobuf
 typing-extensions
 python-dotenv
-spacy
-en-core-web-sm
-
+spacy==3.7.4
+en-core-web-sm==3.7.1
