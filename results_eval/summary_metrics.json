@@ -1,0 +1,20 @@
+{
+  "num_questions": 5,
+  "num_generation_failures": 0,
+  "accuracy_exact_avg": 0.0,
+  "accuracy_exact_or_fuzzy_avg": 0.6,
+  "accuracy_overall_avg": 0.8,
+  "avg_context_relevance": 0.8966672706604004,
+  "avg_latency_sec": 6.350009918212891,
+  "judgement_counts": {
+    "Semantic": 2,
+    "No Match": 1,
+    "Fuzzy": 2
+  },
+  "judgement_percent": {
+    "Semantic": 0.4,
+    "No Match": 0.2,
+    "Fuzzy": 0.4
+  },
+  "avg_user_satisfaction": null
+}
