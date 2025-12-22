@@ -9,3 +9,4 @@ torch
 protobuf
 typing-extensions
 python-dotenv
+spacy
