@@ -9,4 +9,3 @@ protobuf
 typing-extensions
 python-dotenv
 spacy==3.7.4
-en-core-web-sm==3.7.1
