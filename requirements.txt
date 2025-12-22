@@ -2,7 +2,6 @@ streamlit
 chromadb
 sentence-transformers
 google-generativeai
-python-dotenv
 numpy
 pandas
 torch
@@ -10,3 +9,4 @@ protobuf
 typing-extensions
 python-dotenv
 spacy
+en-core-web-sm=
