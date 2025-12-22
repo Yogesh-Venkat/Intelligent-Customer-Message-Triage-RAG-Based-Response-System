@@ -9,4 +9,5 @@ protobuf
 typing-extensions
 python-dotenv
 spacy
-en-core-web-sm=
+en-core-web-sm
+
