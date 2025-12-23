@@ -10,7 +10,7 @@ Usage:
 import os
 import time
 from typing import List, Tuple
-from dotenv import load_dotenv
+
 import numpy as np
 import pandas as pd
 import chromadb
@@ -18,10 +18,10 @@ from sentence_transformers import SentenceTransformer
 import google.generativeai as genai
 import streamlit as st
 from pathlib import Path
-from dotenv import load_dotenv
+
 import pickle
 import re
-import spacy
+
 import json
 from typing import List, Any, Dict
 import spacy
@@ -42,7 +42,7 @@ nlp = spacy.load(MODEL, disable=["parser", "ner"])
 THIS_FILE = Path(__file__).resolve()
 REPO_ROOT = THIS_FILE.parent
 API_KEY = REPO_ROOT / "GOOGLE_API_KEY.env"
-load_dotenv(API_KEY)
+
 CHROMA_DB_DIR = "chroma_db"
 COLLECTION_NAME = "kb_chunks_01"
 
@@ -621,4 +621,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
