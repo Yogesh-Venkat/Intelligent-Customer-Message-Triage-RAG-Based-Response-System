@@ -25,17 +25,11 @@ import re
 import json
 from typing import List, Any, Dict
 import spacy
-from spacy.util import is_package
-from spacy.cli import download
-
-MODEL = "en_core_web_sm"
-
-if not is_package(MODEL):
-    download(MODEL)
-
-nlp = spacy.load(MODEL, disable=["parser", "ner"])
 
 
+
+
+nlp = spacy.load("en_core_web_sm", disable=["parser", "ner"])
 
 
 # ---------- CONFIG ----------
@@ -621,5 +615,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
